@@ -18,6 +18,8 @@ header{
     justify-content:space-between;
     /* background-color: green; */
      align-items:  center; 
+     vertical-align: middle;
+    
 }
 
 .movie{
@@ -50,15 +52,16 @@ header{
 
 ul{
     display: grid;
-    grid-template-columns:repeat(5,1fr);  
-    grid-template-rows:repeat(5,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-template-columns:repeat(5,1fr);  
+    grid-template-rows:repeat(5,1fr); */
     gap: 40px;
 
 }
 
 #api{
     margin: 10px 5% 10px 5%;
-    display: inline-grid;
+    /* display: inline-grid; */
     /* background-color: rgb(18, 16, 16); */
     object-fit: cover;
 
@@ -89,6 +92,7 @@ ul{
     font-size: 18px; /* 제목 텍스트 크기 설정 */
     font-weight: bold; /* 제목 텍스트 굵게 설정 */
     outline: 1px solid black;
+    vertical-align: middle;
 }
 
 .movie-overviewli{

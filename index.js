@@ -74,16 +74,5 @@ fetch(
   })
 
 
-//  let movielength =document.querySelectorAll(".movie-overviewli");
-//  let maxlength = 50;
-
-//  if(movielength.length>maxlength){
-
-//  }
- 
-
-// movie-overviewli 길이가 50글자 수 이상이면
-// 그 이후 글자수는 ...으로 표시
-
 
   .catch((err) => console.error(err));
