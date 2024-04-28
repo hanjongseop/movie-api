@@ -18,7 +18,7 @@ header{
     flex: 0 0 60%;
 }
 
-.search-text{
+.search{
 
     background-color: white;
     color: black;
@@ -29,7 +29,7 @@ header{
 
 }
 
-.search-btn{
+#search-btn{
     background-image: url('./img/search.png');
     background-size:contain;
     background-position: center;
@@ -45,12 +45,14 @@ ul{
     display: grid;
     grid-template-columns:repeat(5,1fr);  
     grid-template-rows:repeat(5,1fr);
+    gap: 40px;
 
 }
 #api{
+    margin: 10px 5% 10px 5%;
     display: inline-grid;
     /* background-color: rgb(18, 16, 16); */
-object-fit: cover;
+    object-fit: cover;
 
 }
 
