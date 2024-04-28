@@ -25,8 +25,6 @@ fetch(
       let post = document.createElement("img");
       post.src = "https://image.tmdb.org/t/p/w185" + element.poster_path;
       moviecard.appendChild(post);
-
-
       post.onclick = function () {
         alert("id:" + element.id);
         post.className = "movie-post";
@@ -47,9 +45,11 @@ fetch(
 
 
       let score = document.createElement("p");
-      score.textContent = element.vote_average;
+      let scoreAverage = parseFloat(element.vote_average).toFixed(1);// 소수점 반올림
+      score.textContent = "평점: "+scoreAverage;
       moviecard.appendChild(score);
       score.className = "movie-score";
+
 
 
     });
@@ -72,4 +72,18 @@ fetch(
       });
     });
   })
+
+
+//  let movielength =document.querySelectorAll(".movie-overviewli");
+//  let maxlength = 50;
+
+//  if(movielength.length>maxlength){
+
+//  }
+ 
+
+// movie-overviewli 길이가 50글자 수 이상이면
+// 그 이후 글자수는 ...으로 표시
+
+
   .catch((err) => console.error(err));
