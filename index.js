@@ -70,11 +70,9 @@ fetch(
       score.className = "movie-score";
     });
 
-    // 검색 함수 정의
-    // 검색어 입력 input 요소에 대한 참조
     const searchInput = document.getElementById("search-input");
 
-    // 검색 함수 정의
+
     function performSearch() {
       let searchQuery = searchInput.value.toLowerCase();
       let movieCards = document.querySelectorAll(".movie-card");
@@ -92,12 +90,12 @@ fetch(
       });
     }
 
-    // 검색 버튼 클릭 시 실행되는 함수
+
     document
       .getElementById("search-btn")
       .addEventListener("click", performSearch);
 
-    // 엔터 키 눌렀을 때 검색 실행
+
     searchInput.addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
         performSearch();
