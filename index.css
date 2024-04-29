@@ -1,114 +1,129 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid white; */
 }
 
-body{
-    background-color: #1b1b1b;
-    color: white;
-    margin: 0;
+body {
+  background-color: #1b1b1b;
+  color: white;
+  margin: 0;
 }
 
-section{
-    text-align: center;
+section {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-header{
-    display: flex;
-    flex-wrap: row nowrap;
-    justify-content:space-between;
-    /* background-color: green; */
-     align-items:  center; 
-     vertical-align: middle;
+header {
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.movie {
+  font-size: 64px;
+  flex: 0 0 60%;
+}
+
+.search {
+  background-color: white;
+  color: black;
+  height: 30px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+#search-btn {
+  background-image: url("./img/search.png");
+  background-size: contain;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+#api {
+  margin: 10px 5% 10px 5%;
+  /* display: inline-grid; */
+  /* background-color: rgb(18, 16, 16); */
+  object-fit: cover;
+}
+
+.title1 {
+  text-align: right;
+}
+
+.movie-card {
+  display: grid;
+  grid-template-rows: 50% 10% 35%;
+  max-width: 300px;
+  grid-template-columns: auto;
+  width: 240px;
+  height: 600px;
+
+}
+
+.movie-post img {
+  width: 100%;
+  height: auto;
+
+}
+
+.movie-titleli {
+  font-size: 18px;
+  font-weight: bold;
+
+  vertical-align: middle;
+}
+
+.movie-overviewli {
+  font-size: 15px;
+  margin-top: 10px;
+
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-score {
+  font-size: 15px;
+  color: #d7d41d;
+  padding: 10px;
+  text-align: left;
+}
+
+footer{
+color: white;
+
+width: 100%;
+height: 80px;
+bottom: 0px;
+text-align: center;
+font-size: 10px;
+
+
+}
+footer img{
+    width: 25PX;
+    height: 25px;
+    margin: 5px;
     
-}
-
-.movie{
-    font-size: 64px;
-    flex: 0 0 60%;
-}
-
-.search{
-
-    background-color: white;
-    color: black;
-    height:30px;
-    margin-left: 8px;
-    border: none;
-    border-radius: 4px;
-
-}
-
-#search-btn{
-    background-image: url('./img/search.png');
-    background-size:contain;
-    background-position: center;
-    width: 40px;
-    height:40px;
-    margin-left: 8px;
-    border: none;
-    border-radius: 4px;
- 
-}
-
-ul{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* grid-template-columns:repeat(5,1fr);  
-    grid-template-rows:repeat(5,1fr); */
-    gap: 40px;
-
-}
-
-#api{
-    margin: 10px 5% 10px 5%;
-    /* display: inline-grid; */
-    /* background-color: rgb(18, 16, 16); */
-    object-fit: cover;
-
-}
-
-
-.title1{
-    text-align: right;
-}
-
-.movie-card{
-    display: grid;
-    grid-template-rows: 50% 10% 35% ;
-    max-width: 300px;
-    grid-template-columns: auto;
-    width: 240px;
-    height: 600px;
-    outline: 1px solid black;
-}
-
-.movie-post img{
-    width: 200px; /* 이미지의 너비를 200px로 설정 */
-    height: auto; /* 높이를 자동으로 조정하여 비율 유지 */
-    outline: 1px solid black;
-  }
-
-.movie-titleli{
-    font-size: 18px; /* 제목 텍스트 크기 설정 */
-    font-weight: bold; /* 제목 텍스트 굵게 설정 */
-    outline: 1px solid black;
-    vertical-align: middle;
-}
-
-.movie-overviewli{
-    font-size: 15px;
-    margin-top: 10px;
-    outline: 1px solid black;
-    display: block;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.movie-score{
-    font-size: 15px; /* 평점 텍스트 크기 설정 */
-    color: #d7d41d; /* 평점 텍스트 색상 설정 */
-    padding: 10px; /* 내부 여백 설정 */
-    text-align: left;
-    outline: 1px solid black;
+    
 }
