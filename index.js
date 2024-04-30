@@ -18,7 +18,6 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", opti
 
       let post = document.createElement("div");
       moviecard.appendChild(post);
-
       let postimg = document.createElement("img");
       postimg.src = "https://image.tmdb.org/t/p/w185" + element.poster_path;
       post.appendChild(postimg);
