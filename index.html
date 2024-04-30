@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css"
+    />
     <link rel="stylesheet" href="./index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="./index.js" type="module"></script>
     <title>영화</title>
   </head>
 
@@ -17,26 +20,20 @@
           class="search"
           id="search-input"
           type="text"
-          placeholder="검색어 입력"/>
+          placeholder="검색어 입력"
+        />
 
-        <button class="search-btn"id="search-btn"></button>
+        <button class="search-btn" id="search-btn"></button>
       </div>
     </header>
     <section>
-      <ul id="api">
-        <!-- <li class="movie-card" > -->
-          <!-- <img id="movie-img" alt="영화이미지" />
-          <div id="title1">영화제목</div>
-          <p id="title2">줄거리</p>
-          <p id="title3">평점</p> -->
-        <!-- </li> -->
-      </ul>
+      <ul id="api"></ul>
     </section>
     <footer>
       <a href="https://github.com/hanjongseop/movie-api" target="_blank">
-      <img src="./img/165746887.png" alt="깃허브 링크" >
-    </a>
-      <P>제작자 :한종섭</P>
+        <img src="./img/165746887.png" alt="깃허브 링크" />
+      </a>
+      <p>제작자 :한종섭</p>
     </footer>
     <script src="./index.js"></script>
   </body>
