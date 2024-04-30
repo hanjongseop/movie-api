@@ -10,12 +10,11 @@ const options = {
 fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", options)
   .then((response) => response.json())
   .then((response) => {
-    console.log(response.results);
-
     response.results.forEach((element) => {
+      let api = document.getElementById("api");
       let moviecard = document.createElement("li");
       moviecard.className = "movie-card";
-      document.getElementById("api").appendChild(moviecard);
+      api.appendChild(moviecard);
 
       let post = document.createElement("div");
       moviecard.appendChild(post);
@@ -23,10 +22,22 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1", opti
       let postimg = document.createElement("img");
       postimg.src = "https://image.tmdb.org/t/p/w185" + element.poster_path;
       post.appendChild(postimg);
-      postimg.onclick = function () {
-        alert("id:" + element.id);
-        postimg.className = "movie-postimg";
-      };
+
+      // postimg.onclick = function () {
+      //   alert("id:" + element.id);
+      //   postimg.className = "movie-postimg";
+      // };
+
+      moviecard.addEventListener("click", handleClickCard);
+      function handleClickCard({ target }) {
+        if (target === moviecard) return;
+
+        if (target.matches("movie-card")) {
+          alert("영화 id:" + element.id);
+        } else {
+          alert("영화 id:" + element.id);
+        }
+      }
 
       let titleli = document.createElement("div");
       titleli.innerText = element.title;

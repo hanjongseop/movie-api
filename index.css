@@ -78,11 +78,9 @@ ul {
   grid-template-columns: auto;
   width: 240px;
   height: 600px;
-}
-
-.movie-postimg {
-  width: 100%;
-  height: auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .movie-titleli {
@@ -94,18 +92,13 @@ ul {
 
 .movie-overviewli {
   font-size: 15px;
-  margin-top: 10px;
-
-  display: block;
   text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .movie-score {
-  font-size: 15px;
+  font-size: 12px;
   color: #d7d41d;
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: left;
 }
 
