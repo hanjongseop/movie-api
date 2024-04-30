@@ -1,4 +1,4 @@
-export const moviecardmake = async () => {
+export const moviecardmake = () => {
   const options = {
     method: "GET",
     headers: {

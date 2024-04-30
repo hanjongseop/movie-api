@@ -1,4 +1,4 @@
-export const cardsearch = async () => {
+export const cardsearch = () => {
   function performSearch() {
     let searchQuery = searchInput.value.toLowerCase();
     let movieCards = document.querySelectorAll(".movie-card");
