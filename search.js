@@ -1,7 +1,4 @@
-export const generateMovieCards = async () => {
-  const searchInput = document.getElementById("search-input");
-  searchInput.focus();
-
+export const cardsearch = async () => {
   function performSearch() {
     let searchQuery = searchInput.value.toLowerCase();
     let movieCards = document.querySelectorAll(".movie-card");
